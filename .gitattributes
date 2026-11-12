@@ -1,0 +1,3 @@
+# Ajouté par rapport au TP : force les fins de ligne Linux (LF)
+# pour que ./app.py et ./test.py fonctionnent dans les conteneurs.
+* text=auto eol=lf
