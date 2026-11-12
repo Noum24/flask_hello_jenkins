@@ -25,6 +25,7 @@ class TestHello(unittest.TestCase):
         self.assertIn(bytearray(f"{name}", 'utf-8'), rv.data)
 
     def test_new_route(self):
+        name = 'Simon'  # correction : 'name' n'était défini que dans test_hello_name
         rv = self.app.get(f'/feature/{name}')
         self.assertEqual(rv.status, '200 OK')
 
